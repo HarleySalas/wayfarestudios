@@ -1,0 +1,18 @@
+@import "../../../../styles/variables.scss";
+
+.navbar__logo {
+  &__span {
+    font-size: 2.2rem;
+    letter-spacing: 0.18rem;
+    color: $color-white;
+    text-transform: uppercase;
+
+    &:nth-of-type(1) {
+      font-weight: 600;
+    }
+
+    &:nth-of-type(2) {
+      font-weight: 300;
+    }
+  }
+}

@@ -8,6 +8,7 @@ import "../../styles/typography.scss";
 import { ScrollProvider } from "../../context/ScrollContext";
 
 import SEO from "./SEO/SEO";
+import Navbar from "./Navbar/Navbar";
 import Page from "./Page/Page";
 
 const Layout = ({ children, title }) => {
@@ -15,6 +16,7 @@ const Layout = ({ children, title }) => {
     <ScrollProvider>
       <div className="Layout">
         <SEO title={title} />
+        <Navbar />
         <Page>{children}</Page>
       </div>
     </ScrollProvider>
