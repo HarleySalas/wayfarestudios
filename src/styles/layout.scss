@@ -1,27 +1,30 @@
 .container {
-  width: 30rem;
+  // width: 30rem;
+  width: 90%;
   margin: 0 auto;
 
   // background-color: rgba(red, 0.24);
 
-  @media screen and(min-width: 360px) {
-    width: 35rem;
-  }
+  // @media screen and(min-width: 360px) {
+  //   // width: 35rem;
+
+  // }
 
   @media screen and(min-width: 410px) {
-    width: 40rem;
+    // width: 40rem;
+    width: 90%;
   }
 
   @media screen and(min-width: 550px) {
-    width: 52rem;
+    width: 50rem;
   }
 
   @media screen and(min-width: 650px) {
-    width: 60rem;
+    width: 55rem;
   }
 
   @media screen and(min-width: 750px) {
-    width: 75rem;
+    width: 65rem;
   }
 
   @media screen and(min-width: 1000px) {
