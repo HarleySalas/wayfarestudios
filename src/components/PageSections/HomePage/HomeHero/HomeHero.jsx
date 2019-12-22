@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeHero.scss";
 
-import HeroImg from "./assets/home-hero.jpg";
+import HeroImg from "./assets/home-hero-edited.jpg";
 
 import Button from "../../../Button/Button";
 
