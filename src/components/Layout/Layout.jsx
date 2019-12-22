@@ -10,6 +10,7 @@ import { ScrollProvider } from "../../context/ScrollContext";
 import SEO from "./SEO/SEO";
 import Navbar from "./Navbar/Navbar";
 import Page from "./Page/Page";
+import Footer from "./Footer/Footer";
 
 const Layout = ({ children, title }) => {
   return (
@@ -18,6 +19,7 @@ const Layout = ({ children, title }) => {
         <SEO title={title} />
         <Navbar />
         <Page>{children}</Page>
+        <Footer />
       </div>
     </ScrollProvider>
   );
