@@ -48,6 +48,7 @@
         color: $color-white;
         text-shadow: 0 0 7px rgba($color-black, 0.42);
         transform: translateY(100%);
+        text-align: center;
 
         &.active {
           animation: yZeroUp 1s $ease forwards;
@@ -60,7 +61,10 @@
     color: $color-white;
     margin-bottom: 3rem;
     text-shadow: 0 0 7px rgba($color-black, 0.42);
+    font-weight: 400;
+    font-size: 2.2rem;
     opacity: 0;
+    text-align: center;
 
     &.active {
       animation: fadeUp 1s $ease forwards 0.42s;

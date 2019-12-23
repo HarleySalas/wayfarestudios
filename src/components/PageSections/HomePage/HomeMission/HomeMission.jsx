@@ -53,7 +53,7 @@ const HomeMission = () => {
             </p>
             <div ref={ctaRef}>
               <Button
-                btnText="More About Us"
+                btnText="Discover More"
                 btnStyle="primary"
                 rounded
                 addClass={`home-mission__cta ${ctaAnimated && "active"}`}
