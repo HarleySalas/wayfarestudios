@@ -12,8 +12,8 @@ const NavbarTop = () => {
 
         <ul className="navbar__top__ul">
           <li className="navbar__top__li">
-            <Link to="/about" className="navbar__top__link">
-              About
+            <Link to="/discover" className="navbar__top__link">
+              Discover
             </Link>
           </li>
           <li className="navbar__top__li">
