@@ -19,8 +19,8 @@ const Layout = ({ children, title }) => {
         <SEO title={title} />
         <Navbar />
         <Page>{children}</Page>
-        <Footer />
       </div>
+      <Footer />
     </ScrollProvider>
   );
 };
