@@ -58,7 +58,7 @@
       &__inner {
         display: block;
         transform: translateY(100%);
-        animation: yZeroUp 1s $ease forwards 0.11s;
+        animation: yZeroUp 1s $ease forwards 0.42s;
         text-shadow: 0 0 7px rgba($color-black, 0.42);
       }
 
@@ -69,10 +69,10 @@
       }
 
       &:nth-of-type(2) .home-hero__heading__span__inner {
-        animation-delay: 0.42s;
+        animation-delay: 0.72s;
 
         @media screen and(min-width: 750px) {
-          animation-delay: 0.11s;
+          animation-delay: 0.42s;
         }
       }
     }
@@ -80,7 +80,6 @@
 
   &__sub-heading {
     margin-bottom: 2rem;
-    font-weight: 300;
     text-shadow: 0 0 7px rgba($color-black, 0.42);
     opacity: 0;
     animation: fadeUp 1s $ease forwards 0.72s;

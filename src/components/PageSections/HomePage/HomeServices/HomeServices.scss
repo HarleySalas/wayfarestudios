@@ -12,7 +12,69 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+
+    @media screen and(min-width: 1300px) {
+      align-items: center;
+    }
+  }
+
+  &__heading-wrapper {
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and(min-width: 1300px) {
+      align-items: center;
+    }
+  }
+
+  &__heading-description {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-grey-light;
+    opacity: 0;
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+
+    &__span {
+      display: block;
+      overflow: hidden;
+
+      &__inner {
+        display: block;
+        text-transform: uppercase;
+        transform: translateY(100%);
+
+        &.active {
+          animation: yZeroUp 0.72s $ease forwards;
+        }
+      }
+    }
+  }
+
+  &__heading-line {
+    display: block;
+    width: 5rem;
+    height: 4px;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+
+    &.active {
+      animation: scaleX1 0.72s $ease forwards 0.42s;
+    }
+
+    @media screen and(min-width: 700px) {
+      width: 7rem;
+    }
   }
 
   &__card-wrapper {
@@ -34,7 +96,7 @@
 
     &.active {
       pointer-events: auto;
-      animation: fadeUp 1s $ease forwards 0.24s;
+      animation: fadeUp 0.72s $ease forwards 0.24s;
     }
   }
 }

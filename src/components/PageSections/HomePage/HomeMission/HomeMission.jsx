@@ -17,6 +17,13 @@ const HomeMission = () => {
       <section className="home-mission">
         <CornerDots className="home-mission__corner-dots" />
         <div className="container home-mission__container">
+          <div className="home-mission__description-wrapper">
+            <span
+              className={`home-mission__description ${animated && "active"}`}
+            >
+              Who We Are
+            </span>
+          </div>
           <div className="home-mission__content-wrapper">
             <div className="home-mission__heading-wrapper">
               <h2 className="home-mission__heading" ref={headingRef}>

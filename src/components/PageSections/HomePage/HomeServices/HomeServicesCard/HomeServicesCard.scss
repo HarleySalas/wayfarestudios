@@ -19,7 +19,7 @@
     margin-bottom: 3rem;
 
     &.active .home-services__card__heading__inner {
-      animation: yZeroUp 1s $ease forwards;
+      animation: yZeroUp 0.72s $ease forwards;
     }
   }
 
@@ -33,7 +33,7 @@
       color: $color-black;
 
       &.active {
-        animation: yZeroUp 1s $ease forwards;
+        animation: yZeroUp 0.72s $ease forwards;
       }
     }
     &:nth-of-type(1) &__inner {
@@ -57,7 +57,7 @@
     // color: $color-white-dark;
 
     &.active {
-      animation: fadeUp 1s $ease forwards 0.72s;
+      animation: fadeUp 0.72s $ease forwards 0.72s;
     }
   }
 }

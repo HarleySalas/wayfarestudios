@@ -7,12 +7,36 @@ import HomeServicesCard from "./HomeServicesCard/HomeServicesCard";
 import { useObserver } from "../../../utils";
 
 const HomeServices = () => {
+  const headingRef = useRef(null);
+  const headingAnimated = useObserver(headingRef);
   const btnRef = useRef(null);
   const btnAnimated = useObserver(btnRef);
 
   return (
     <section className="home-services">
       <div className="container home-services__container">
+        <div className="home-services__heading-wrapper" ref={headingRef}>
+          <span
+            className={`home-services__heading-description ${headingAnimated &&
+              "active"}`}
+          >
+            What We Do
+          </span>
+          <h2 className="home-services__heading">
+            <span className="home-services__heading__span">
+              <span
+                className={`home-services__heading__span__inner ${headingAnimated &&
+                  "active"}`}
+              >
+                Services
+              </span>
+            </span>
+          </h2>
+          <span
+            className={`home-services__heading-line ${headingAnimated &&
+              "active"}`}
+          ></span>
+        </div>
         <div className="home-services__card-wrapper">
           <HomeServicesCard
             heading="Bespoke"
