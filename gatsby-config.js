@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Gatsby Boilerplate`,
-    author: `HarleySalas`,
+    title: `Wayfare Studios - Full Service Digital Agency`,
+    description: `Web Design, Development, SEO and Digital Marketing Experts. Get a free proposal today!`,
+    author: `Wayfare Studios`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,17 +27,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Wayfare Studios - Full Service Digitial Agency`,
+        short_name: `Wayfare Studios`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#f9f9f9`,
+        theme_color: `#14191c`,
+        display: `fullscreen`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    //PWA (must be placed after gatsby-plugin-manifest)
+    `gatsby-plugin-offline`,
   ],
-}
+};
