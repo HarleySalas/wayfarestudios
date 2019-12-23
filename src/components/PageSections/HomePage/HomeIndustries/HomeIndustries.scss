@@ -1,6 +1,124 @@
 @import "../../../../styles/variables.scss";
 
 .home-industries {
-  min-height: 100vh;
-  padding: 7rem 0;
+  padding: 9rem 0;
+
+  &__container {
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+
+    @media screen and(min-width: 1000px) {
+      margin-bottom: 11rem;
+    }
+  }
+
+  &__heading-description {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-grey-light;
+    opacity: 0;
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+
+    &__span {
+      display: block;
+      overflow: hidden;
+
+      &__inner {
+        display: block;
+        text-transform: uppercase;
+        transform: translateY(100%);
+
+        &.active {
+          animation: yZeroUp 0.72s $ease forwards;
+        }
+      }
+    }
+  }
+
+  &__heading-line {
+    width: 5rem;
+    height: 4px;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+
+    &.active {
+      animation: scaleX1 0.72s $ease forwards 0.42s;
+    }
+
+    @media screen and(min-width: 700px) {
+      width: 7rem;
+    }
+  }
+
+  &__content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+
+  &__icon-wrapper {
+    width: 50%;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &:nth-last-of-type(1) {
+      height: auto;
+    }
+
+    &:nth-last-of-type(2) {
+      height: auto;
+    }
+
+    @media screen and(min-width: 1000px) {
+      width: 20%;
+      height: 22rem;
+    }
+  }
+
+  &__icon {
+    width: 7rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+
+    @media screen and(min-width: 500px) {
+      width: 9rem;
+    }
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards;
+    }
+  }
+
+  &__icon-title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.6rem;
+    opacity: 0;
+
+    @media screen and(min-width: 500px) {
+      font-size: 1.8rem;
+    }
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards 0.24s;
+    }
+  }
 }
