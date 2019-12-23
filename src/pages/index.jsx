@@ -10,7 +10,7 @@ import HomeIndustries from "../components/PageSections/HomePage/HomeIndustries/H
 import HomeProposal from "../components/PageSections/HomePage/HomeProposal/HomeProposal";
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <HomeHero />
     <HomeMission />
     <HomeServices />
