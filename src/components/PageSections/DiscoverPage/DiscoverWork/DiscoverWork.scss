@@ -1,0 +1,18 @@
+@import "../../../../styles/variables.scss";
+
+.discover-work {
+  &__heading-wrapper {
+    width: 100%;
+    padding: 5rem;
+    background-color: $color-white-dark;
+    margin-bottom: 7rem;
+  }
+
+  &__container {
+    @media screen and(min-width: 1000px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
