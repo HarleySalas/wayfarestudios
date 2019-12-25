@@ -97,6 +97,7 @@
     width: 7rem;
     margin-bottom: 2rem;
     opacity: 0;
+    fill: $color-primary;
 
     @media screen and(min-width: 500px) {
       width: 9rem;
@@ -110,12 +111,8 @@
   &__icon-title {
     font-weight: 600;
     text-align: center;
-    font-size: 1.6rem;
     opacity: 0;
-
-    @media screen and(min-width: 500px) {
-      font-size: 1.8rem;
-    }
+    text-transform: uppercase;
 
     &.active {
       animation: fadeUp 0.72s $ease forwards 0.24s;

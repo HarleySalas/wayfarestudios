@@ -28,7 +28,7 @@ const HomeHero = () => {
           Web Design, Development & Marketing Agency
         </span>
         <div className="home-hero__btn-wrapper">
-          <Button btnText="Get a Free Proposal" btnStyle="primary" rounded />
+          <Button btnText="Get a Free Proposal" btnStyle="primary" />
         </div>
       </div>
     </header>

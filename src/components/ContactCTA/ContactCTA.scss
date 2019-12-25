@@ -2,11 +2,22 @@
 
 .contact-cta {
   position: relative;
-  min-height: 70vh;
+  // min-height: 70vh;
+  padding: 0rem 0;
   overflow: hidden;
-  // background-color: $color-black;
+  background-color: $color-black;
   display: flex;
   align-items: center;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 2rem;
+  //   background-color: $color-primary;
+  //   bottom: 0;
+  //   z-index: 3;
+  // }
 
   &__img {
     position: absolute;
@@ -15,29 +26,35 @@
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    z-index: 1;
     user-select: none;
+    opacity: 0.42;
 
-    &__overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color-primary, 0.98);
-      mix-blend-mode: hard-light;
-      // mix-blend-mode: multiply;
-      z-index: -1;
-    }
+    // &__overlay {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba($color-primary, 0.98);
+    //   mix-blend-mode: hard-light;
+    //   // mix-blend-mode: multiply;
+    //   z-index: -1;
+    // }
   }
 
   &__container {
-    padding: 7rem 0;
+    padding: 9rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
+
+    @media screen and(min-width: 900px) {
+      padding: 14rem 0;
+    }
   }
 
   &__heading {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 
     &__span {
       display: block;
@@ -59,12 +76,19 @@
 
   &__span {
     color: $color-white;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-shadow: 0 0 7px rgba($color-black, 0.42);
-    font-weight: 400;
-    font-size: 2.2rem;
-    opacity: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $color-white;
+    margin-bottom: 7rem;
     text-align: center;
+    opacity: 0;
+
+    @media screen and(min-width: 750px) {
+      font-size: 2rem;
+    }
 
     &.active {
       animation: fadeUp 1s $ease forwards 0.42s;

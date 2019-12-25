@@ -13,7 +13,7 @@ const HomeServicesCard = props => {
 
   return (
     <div className="home-services__card" ref={ref}>
-      <h2
+      <h3
         className={`home-services__card__heading-wrapper ${animated &&
           "active"}`}
       >
@@ -23,11 +23,14 @@ const HomeServicesCard = props => {
           </span>
         </span>
         <span className="home-services__card__heading">
-          <span className="home-services__card__heading__inner">
-            {props.subheading}
+          <span
+            className="home-services__card__heading__inner"
+            dangerouslySetInnerHTML={{ __html: props.subheading }}
+          >
+            {/* {props.subheading} */}
           </span>
         </span>
-      </h2>
+      </h3>
       <p className={`home-services__card__content ${animated && "active"}`}>
         {props.children}
       </p>

@@ -55,7 +55,6 @@ const HomeMission = () => {
               <Button
                 btnText="Discover More"
                 btnStyle="primary"
-                rounded
                 addClass={`home-mission__cta ${ctaAnimated && "active"}`}
               />
             </div>

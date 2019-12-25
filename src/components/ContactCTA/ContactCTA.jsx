@@ -3,7 +3,7 @@ import "./ContactCTA.scss";
 
 import { useObserver } from "../utils";
 
-import ProposalImg from "./assets/proposal-bg.jpg";
+import ProposalImg from "./assets/contact-bg.jpg";
 import Button from "../Button/Button";
 
 const ContactCTA = () => {
@@ -30,8 +30,7 @@ const ContactCTA = () => {
         </span>
         <Button
           btnText="Contact Us"
-          btnStyle="white"
-          rounded
+          btnStyle="primary"
           addClass={`contact-cta__cta ${animated && "active"}`}
         />
       </div>

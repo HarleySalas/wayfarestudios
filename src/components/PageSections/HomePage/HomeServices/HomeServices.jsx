@@ -40,7 +40,7 @@ const HomeServices = () => {
         <div className="home-services__card-wrapper">
           <HomeServicesCard
             heading="Bespoke"
-            subheading="Web Design + Development"
+            subheading="Web Design <span class='blue'>+</span><br/>Development"
           >
             Creating an unparalleled, optimized user experience, focused on your
             needs. Anything from small landing pages, to big e-commerce sites
@@ -48,7 +48,7 @@ const HomeServices = () => {
           </HomeServicesCard>
           <HomeServicesCard
             heading="Creative"
-            subheading="Branding + Print Media"
+            subheading="Branding <span class='blue'>+</span><br/>Print Media"
           >
             Bringing your vision to life, and providing you with an identity to
             be proud of. Nothing about our process is cookie cutter, or copy and
@@ -56,7 +56,7 @@ const HomeServices = () => {
           </HomeServicesCard>
           <HomeServicesCard
             heading="Social Media"
-            subheading="Management + Advertising"
+            subheading="Management <span class='blue'>+</span><br/>Advertising"
           >
             Building your audience and expanding your reach to new heights. Our
             strategic campaigns are focused on both short and long-term growth,
@@ -67,7 +67,6 @@ const HomeServices = () => {
           btnText="Learn More"
           btnStyle="black"
           addClass={`home-services__cta ${btnAnimated && "active"}`}
-          rounded
           btnRef={btnRef}
         />
       </div>
