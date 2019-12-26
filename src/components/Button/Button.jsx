@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import "./Button.scss";
 
@@ -26,7 +26,11 @@ const Button = props => {
   );
 
   if (props.linkTo) {
-    return <Link to={props.linkTo}>{btnElement}</Link>;
+    return (
+      <AniLink to={props.linkTo} fadeduration={0.42}>
+        {btnElement}
+      </AniLink>
+    );
   }
 
   return btnElement;
