@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderImg from "./assets/discover-hero.jpg";
+import HeaderImg from "./assets/discover-hero-4.jpg";
 
 import PageHeader from "../../../PageHeader/PageHeader";
 
