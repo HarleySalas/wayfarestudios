@@ -15,8 +15,13 @@ const Button = props => {
   `;
 
   const btnElement = (
-    <button className={btnStyle} onClick={props.onClick} ref={props.btnRef}>
-      {props.btnText}
+    <button
+      className={btnStyle}
+      onClick={props.onClick}
+      ref={props.btnRef}
+      data-text={props.btnText}
+    >
+      {/* {props.btnText} */}
     </button>
   );
 
