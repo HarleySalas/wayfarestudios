@@ -4,6 +4,7 @@ import "./PageHeader.scss";
 const PageHeader = ({ img, alt, title, subtitle }) => {
   return (
     <section className="page-header">
+      <div className="page-header__background__backdrop"></div>
       <img className="page-header__background" src={img} alt={alt} />
       <div className="page-header__container">
         <h1 className="page-header__title">
