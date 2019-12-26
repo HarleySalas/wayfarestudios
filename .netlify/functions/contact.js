@@ -47,6 +47,7 @@ exports.handler = (event, context, callback) => {
   //Mailgun
   mg.message().send(mailOptions, (error, body) => {
     if (error) {
+      console.log(error);
       callback(null, {
         errorCode,
         headers,
