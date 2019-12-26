@@ -30,18 +30,21 @@ const ContactForm = () => {
 
   const sendMessage = () => {
     console.log("SENDING MESSAGE");
-    // let { name, company, mail, subject, message } = values;
-    // let data = { name, company, mail, subject, message };
-    // axios.post(endpoints.contact, JSON.stringify(data));
-    // .then(response => {
-    //   if (response.status !== 200) {
-    //     setSendFailure(true);
-    //     setSent(false);
-    //   } else {
-    //     setSent(true);
-    //     setSendFailure(false);
-    //   }
-    // })
+    let { name, company, mail, subject, message } = values;
+    let data = { name, company, mail, subject, message };
+    axios
+      .post("/.netlify/functions/contact", JSON.stringify(data))
+      .then(response => {
+        if (response.status !== 200) {
+          console.log("failure");
+          // setSendFailure(true);
+          // setSent(false);
+        } else {
+          console.log("success");
+          // setSent(true);
+          // setSendFailure(false);
+        }
+      });
   };
 
   return (
