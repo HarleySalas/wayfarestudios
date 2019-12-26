@@ -22,7 +22,7 @@ const NavbarTop = () => {
             </Link>
           </li>
           <li className="navbar__top__li">
-            <Link to="/case-studies" className="navbar__top__link">
+            <Link to="/cases" className="navbar__top__link">
               Case Studies
             </Link>
           </li>
