@@ -19,15 +19,6 @@ const ContactForm = () => {
   // const [sendFailure, setSendFailure] = useState(false);
   // const [loading, setLoading];
 
-  const {
-    handleChange,
-    handleBlur,
-    handleSubmit,
-    values,
-    errors,
-    isSubmitting,
-  } = useFormValidate(INITIAL_STATE, validateContact, sendMessage);
-
   const sendMessage = () => {
     console.log("SENDING MESSAGE");
     let { name, company, mail, subject, message } = values;
@@ -46,6 +37,15 @@ const ContactForm = () => {
         }
       });
   };
+
+  const {
+    handleChange,
+    handleBlur,
+    handleSubmit,
+    values,
+    errors,
+    isSubmitting,
+  } = useFormValidate(INITIAL_STATE, validateContact, sendMessage);
 
   return (
     <section className="contact__form-wrapper">
