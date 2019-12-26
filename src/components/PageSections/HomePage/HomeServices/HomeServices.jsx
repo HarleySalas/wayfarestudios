@@ -68,6 +68,7 @@ const HomeServices = () => {
           btnStyle="black"
           addClass={`home-services__cta ${btnAnimated && "active"}`}
           btnRef={btnRef}
+          linkTo="/services"
         />
       </div>
     </section>

@@ -56,6 +56,7 @@ const HomeMission = () => {
                 btnText="Discover More"
                 btnStyle="primary"
                 addClass={`home-mission__cta ${ctaAnimated && "active"}`}
+                linkTo="/discover"
               />
             </div>
           </div>

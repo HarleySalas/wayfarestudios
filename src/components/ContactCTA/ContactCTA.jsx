@@ -32,6 +32,7 @@ const ContactCTA = () => {
           btnText="Contact Us"
           btnStyle="primary"
           addClass={`contact-cta__cta ${animated && "active"}`}
+          linkTo="/contact"
         />
       </div>
     </section>
