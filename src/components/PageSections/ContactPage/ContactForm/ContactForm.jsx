@@ -48,7 +48,6 @@ const ContactForm = () => {
     handleSubmit,
     values,
     errors,
-    isSubmitting,
   } = useFormValidate(INITIAL_STATE, validateContact, sendMessage);
 
   return (
