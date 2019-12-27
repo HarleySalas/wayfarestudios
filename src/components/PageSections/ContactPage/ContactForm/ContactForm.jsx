@@ -23,12 +23,9 @@ const ContactForm = () => {
     console.log("SENDING MESSAGE");
     let { name, company, mail, subject, message } = values;
     let data = { name, company, mail, subject, message };
+
     axios
-      // .post("./netlify/functions/contact", JSON.stringify(data))
-      .post(
-        "http://localhost:9000/.netlify/functions/contact",
-        JSON.stringify(data)
-      )
+      .post("/.netlify/functions/contact", JSON.stringify(data))
       .then(response => {
         if (response.status !== 200) {
           console.log("failure (jsx)");

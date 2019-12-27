@@ -37,8 +37,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "prod": "npm run build; npm run lambda-build",
     "lambda-serve": "netlify-lambda serve functions",
     "lambda-build": "netlify-lambda build functions",
+    "postinstall": "netlify-lambda install",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
