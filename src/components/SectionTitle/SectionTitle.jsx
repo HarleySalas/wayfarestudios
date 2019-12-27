@@ -3,13 +3,14 @@ import "./SectionTitle.scss";
 
 import { useObserver } from "../utils";
 
-const SectionTitle = ({ description, title, centered, margin }) => {
+const SectionTitle = ({ description, title, centered, margin, marginSm }) => {
   const ref = useRef(null);
   const animated = useObserver(ref);
   return (
     <div
       className={`section-title ${margin &&
-        "section-title--margin"} ${centered && "section-title--centered"}`}
+        "section-title--margin"} ${marginSm &&
+        "section-title--margin-sm"} ${centered && "section-title--centered"}`}
       ref={ref}
     >
       {description && (
