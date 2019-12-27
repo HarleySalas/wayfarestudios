@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+.not-found {
+  &__container {
+    padding: 7rem 0;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+}
