@@ -2,7 +2,6 @@ import React from "react";
 
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/Layout/SEO/SEO";
-import Button from "../components/Button/Button";
 
 import NotFound from "../components/PageSections/NotFound/NotFound";
 
