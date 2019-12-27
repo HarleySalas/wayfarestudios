@@ -11,9 +11,8 @@ const contact = () => {
     <Layout>
       <SEO title="Contact" />
       <ContactHeader />
-      <div className="container">
-        <ContactForm />
-      </div>
+
+      <ContactForm />
     </Layout>
   );
 };
