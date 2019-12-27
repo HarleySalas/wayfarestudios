@@ -1,0 +1,164 @@
+@import "../../../../styles/variables.scss";
+
+.services-category {
+  padding: 11rem 0;
+  &:nth-of-type(odd) {
+    background-color: $color-white-dark;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and(min-width: 1300px) {
+      flex-direction: row;
+    }
+  }
+
+  &__content-wrapper {
+    width: 100%;
+    // padding-right: 5rem;
+
+    @media screen and(min-width: 1300px) {
+      width: 50%;
+      padding-right: 9rem;
+    }
+  }
+
+  &__list-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and(min-width: 1300px) {
+      width: 50%;
+    }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+
+  &__subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-grey-light;
+    font-size: 3.4rem;
+    opacity: 0;
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    &__span {
+      display: block;
+      overflow: hidden;
+
+      &__inner {
+        display: block;
+        text-transform: uppercase;
+        transform: translateY(100%);
+
+        &.active {
+          animation: yZeroUp 0.72s $ease forwards;
+        }
+      }
+
+      &:nth-last-of-type(1) .services-category__title__span__inner.active {
+        animation-delay: 0.42s;
+      }
+    }
+  }
+
+  &__line {
+    width: 5rem;
+    height: 4px;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+
+    &.active {
+      animation: scaleX1 0.72s $ease forwards 0.72s;
+    }
+
+    @media screen and(min-width: 700px) {
+      width: 7rem;
+    }
+  }
+
+  &__content {
+    margin-bottom: 7rem;
+    opacity: 0;
+
+    @media screen and(min-width: 1300px) {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards 0.42s;
+    }
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+
+    &.active {
+      animation: fadeUp 0.72s $ease forwards;
+    }
+  }
+
+  &__deliverable {
+    width: 100%;
+    position: relative;
+    font-family: trumpgothicpro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    // font-size: 2.8rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: $color-grey;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 900px) {
+      width: 50%;
+    }
+
+    @media screen and(min-width: 1300px) {
+      font-size: 2.4rem;
+      margin-bottom: 1.42rem;
+
+      &:nth-last-of-type(1),
+      &:nth-last-of-type(2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and(min-width: 1500px) {
+      font-size: 2.7rem;
+    }
+
+    @media screen and(min-width: 1650px) {
+      font-size: 3rem;
+    }
+  }
+}
