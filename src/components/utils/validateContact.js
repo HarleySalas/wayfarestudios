@@ -19,7 +19,7 @@ export default function validateContact(values) {
   if (!values.subject) {
     errors.subject = "Required.";
   } else if (values.subject.length < 3) {
-    errors.mail = "Please provide a subject.";
+    errors.subject = "Please provide a subject.";
   }
 
   //Message
