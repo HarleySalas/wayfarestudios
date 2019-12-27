@@ -43,7 +43,7 @@ const HomeMission = () => {
             </div>
             <p className={`home-mission__content ${animated && "active"}`}>
               Wayfare Studios strives to create long-lasting client
-              relationships by providing unparalled service. Working with
+              relationships by providing unparalleled service. Working with
               businesses of all sizes, our results driven services are tailored
               specifically to your needs, while always involving you in the
               process. All of our work is bespoke, ensuring that you receive
