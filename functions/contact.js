@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-//Connect Mailgun API wrapper
+// Connect Mailgun API wrapper
 const mailgun = require("mailgun-js");
 const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
@@ -20,11 +20,14 @@ const headers = {
 };
 
 //Cloud Func.
-exports.handler = (event, context, callback) => {
+exports.handler = function(event, context, callback) {
+  console.log("LAMBDA FUNC. CALLED");
   let data = JSON.parse(event.body);
   let { name, company, mail, subject, message } = data;
+  console.log(`DATA: ${data}`);
   let mailOptions = {
     from: `${name} <${mail}>`,
+    // to: "harley@wayfarestudios.com",
     to: process.env.SITE_EMAIL_ADDRESS,
     replyTo: mail,
     subject: `${subject}`,
@@ -47,13 +50,14 @@ exports.handler = (event, context, callback) => {
   //Mailgun
   mg.message().send(mailOptions, (error, body) => {
     if (error) {
-      console.log(error);
+      console.log(`ERROR FROM mg.message: ${error}`);
       callback(null, {
         errorCode,
         headers,
         body: JSON.stringify(error),
       });
     } else {
+      console.log("SUCCESSFULLY PASSED");
       callback(null, {
         successCode,
         headers,

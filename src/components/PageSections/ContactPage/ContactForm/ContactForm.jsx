@@ -24,14 +24,18 @@ const ContactForm = () => {
     let { name, company, mail, subject, message } = values;
     let data = { name, company, mail, subject, message };
     axios
-      .post("./netlify/functions/contact", JSON.stringify(data))
+      // .post("./netlify/functions/contact", JSON.stringify(data))
+      .post(
+        "http://localhost:9000/.netlify/functions/contact",
+        JSON.stringify(data)
+      )
       .then(response => {
         if (response.status !== 200) {
-          console.log("failure");
+          console.log("failure (jsx)");
           // setSendFailure(true);
           // setSent(false);
         } else {
-          console.log("success");
+          console.log("success (jsx)");
           // setSent(true);
           // setSendFailure(false);
         }
@@ -57,7 +61,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="name"
-              autocomplete="nope"
+              autoComplete="nope"
               className="contact__form__input"
               value={values.name}
               errors={errors.name}
@@ -80,7 +84,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="company"
-              autocomplete="nope"
+              autoComplete="nope"
               className="contact__form__input"
               value={values.company}
               onChange={handleChange}
@@ -101,7 +105,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="mail"
-              autocomplete="nope"
+              autoComplete="nope"
               className="contact__form__input"
               value={values.mail}
               errors={errors.mail}
@@ -123,7 +127,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="subject"
-              autocomplete="nope"
+              autoComplete="nope"
               className="contact__form__input"
               value={values.subject}
               errors={errors.subject}
