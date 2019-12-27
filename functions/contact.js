@@ -15,16 +15,21 @@ const successCode = 200;
 const errorCode = 400;
 const headers = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Conntrol-Allow-Headers": "Content-Type",
-  "Content-type": "text/html; charset=utf-8",
+  "Access-Control-Allow-Headers": "Content-Type",
+  // "Content-type": "text/html; charset=utf-8",
 };
 
 //Cloud Func.
 exports.handler = function(event, context, callback) {
-  console.log("LAMBDA FUNC. CALLED");
+  if (event.httpMethod !== "POST") {
+    return {
+      statusCode: 200,
+      headers,
+      body: "This was not a POST request!",
+    };
+  }
   let data = JSON.parse(event.body);
   let { name, company, mail, subject, message } = data;
-  console.log(`DATA: ${data}`);
   let mailOptions = {
     from: `${name} <${mail}>`,
     // to: "harley@wayfarestudios.com",
@@ -50,14 +55,12 @@ exports.handler = function(event, context, callback) {
   //Mailgun
   mg.message().send(mailOptions, (error, body) => {
     if (error) {
-      console.log(`ERROR FROM mg.message: ${error}`);
       callback(null, {
         errorCode,
         headers,
         body: JSON.stringify(error),
       });
     } else {
-      console.log("SUCCESSFULLY PASSED");
       callback(null, {
         successCode,
         headers,
