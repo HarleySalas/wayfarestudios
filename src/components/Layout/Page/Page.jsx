@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import throttle from "lodash/fp/throttle";
+import "./Page.scss";
 
 import { ScrollContext } from "../../../context/ScrollContext";
 
