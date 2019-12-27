@@ -1,0 +1,61 @@
+@import "../../../../styles/variables.scss";
+
+.menu-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1500;
+  transition: all 0.24s $ease 0s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    .menu-icon__line {
+      background-color: $color-white-active;
+    }
+  }
+
+  &.navtop {
+    @media screen and(min-width: 1000px) {
+      display: none;
+    }
+  }
+
+  &.active {
+    transform: rotate(45deg);
+    transition: transform 0.24s $ease 0.35s;
+
+    .menu-icon__line {
+      &:nth-child(2) {
+        transform: scaleX(0);
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        transition: transform 0.24s $ease 0.24s;
+      }
+
+      &:nth-child(1) {
+        transform: translateY(8px);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-10px) rotate(90deg);
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 3.5rem;
+    height: 2px;
+    background-color: $color-white;
+    margin: 7px auto;
+    transition: all 0.24s $ease;
+    border-radius: 3px;
+  }
+}

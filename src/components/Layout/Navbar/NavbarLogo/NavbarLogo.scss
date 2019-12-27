@@ -3,20 +3,35 @@
 .navbar__logo {
   &__span {
     // font-size: 2.2rem;
-    font-size: 3.42rem;
+    position: relative;
+    font-size: 2.42rem;
     letter-spacing: 0.33rem;
     color: $color-white;
     text-transform: uppercase;
     font-family: trumpgothicpro, sans-serif;
     font-weight: 700;
     font-style: normal;
+    z-index: 1500;
 
-    // &:nth-of-type(1) {
-    //   font-weight: 600;
-    // }
+    &.navtop {
+      font-size: 2.72rem;
+      @media screen and(min-width: 370px) {
+        font-size: 2.9rem;
+      }
 
-    // &:nth-of-type(2) {
-    //   font-weight: 300;
-    // }
+      @media screen and(min-width: 550px) {
+        font-size: 3rem;
+      }
+
+      @media screen and(min-width: 700px) {
+        font-size: 3.42rem;
+      }
+    }
+
+    &.navscroll {
+      @media screen and(min-width: 700px) {
+        font-size: 2.8rem;
+      }
+    }
   }
 }

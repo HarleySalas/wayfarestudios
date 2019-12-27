@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   height: 9rem;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
 
@@ -32,12 +32,44 @@
   &__li {
     color: $color-white;
     margin-right: 3rem;
+    transition: color 0.24s $ease;
 
     &:nth-of-type(4) {
       margin-right: 0;
     }
+
+    &:hover {
+      color: $color-white-active;
+    }
   }
 
   &__link {
+    position: relative;
+
+    &.active {
+      color: $color-white-active;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.42rem;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $color-primary;
+        transform-origin: 0% 50%;
+        animation: activeNav 0.42s $ease forwards;
+      }
+    }
+  }
+}
+
+@keyframes activeNav {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }

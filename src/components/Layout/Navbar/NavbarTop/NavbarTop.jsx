@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "./NavbarTop.scss";
 
 import NavbarLogo from "../NavbarLogo/NavbarLogo";
+import MenuIcon from "../MenuIcon/MenuIcon";
 
 const NavbarTop = () => {
   return (
     <div className="navbar__top">
       <div className="container navbar__top__container">
-        <NavbarLogo />
-
+        <NavbarLogo navTop />
+        <MenuIcon navTop />
         <ul className="navbar__top__ul">
           <li className="navbar__top__li">
             <AniLink
@@ -18,6 +18,7 @@ const NavbarTop = () => {
               to="/discover"
               duration={0.24}
               className="navbar__top__link"
+              activeClassName="active"
             >
               Discover
             </AniLink>
@@ -28,6 +29,7 @@ const NavbarTop = () => {
               to="/services"
               duration={0.24}
               className="navbar__top__link"
+              activeClassName="active"
             >
               Services
             </AniLink>
@@ -38,6 +40,7 @@ const NavbarTop = () => {
               to="/cases"
               duration={0.24}
               className="navbar__top__link"
+              activeClassName="active"
             >
               Case Studies
             </AniLink>
@@ -48,6 +51,7 @@ const NavbarTop = () => {
               to="/contact"
               duration={0.24}
               className="navbar__top__link"
+              activeClassName="active"
             >
               Contact
             </AniLink>
