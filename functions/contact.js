@@ -16,6 +16,7 @@ const errorCode = 400;
 const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
   // "Content-type": "text/html; charset=utf-8",
 };
 
