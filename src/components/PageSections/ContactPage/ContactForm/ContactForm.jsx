@@ -20,7 +20,6 @@ const ContactForm = () => {
   // const [loading, setLoading];
 
   const sendMessage = () => {
-    console.log("SENDING MESSAGE");
     let { name, company, mail, subject, message } = values;
     let data = { name, company, mail, subject, message };
 
