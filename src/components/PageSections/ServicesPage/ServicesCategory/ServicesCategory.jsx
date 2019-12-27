@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import "./ServicesCategory.scss";
 
-import SectionTitle from "../../../SectionTitle/SectionTitle";
-
 import { useObserver } from "../../../utils";
 
 const ServicesCategory = ({
