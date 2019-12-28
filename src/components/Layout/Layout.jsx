@@ -1,10 +1,6 @@
 import React from "react";
 import "./Layout.scss";
 
-import "../../styles/base.scss";
-import "../../styles/layout.scss";
-import "../../styles/typography.scss";
-
 import { ScrollProvider } from "../../context/ScrollContext";
 
 import SEO from "./SEO/SEO";

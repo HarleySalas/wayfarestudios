@@ -5,9 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-export const onClientEntry = () => {
-  //IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
-  if (!(`IntersectionObserver` in window)) {
-    import(`intersection-observer`);
-  }
-};
+import "./src/styles/base.scss";
+import "./src/styles/layout.scss";
+import "./src/styles/typography.scss";
+import "./src/styles/animations.scss";
