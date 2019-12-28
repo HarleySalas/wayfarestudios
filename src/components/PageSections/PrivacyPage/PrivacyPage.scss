@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.privacy {
+  &__container {
+    padding: 11rem 0;
+  }
+
+  &__h2 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+
+  &__p {
+    margin-bottom: 2rem;
+
+    &.end {
+      margin-bottom: 7rem;
+    }
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+}
