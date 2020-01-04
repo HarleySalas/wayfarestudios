@@ -1,37 +1,57 @@
 @import "../../../../styles/variables.scss";
 
 .navbar__logo {
-  &__span {
-    // font-size: 2.2rem;
-    position: relative;
-    font-size: 2.42rem;
-    letter-spacing: 0.33rem;
-    color: $color-white;
-    text-transform: uppercase;
-    font-family: trumpgothicpro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    z-index: 1500;
+  position: relative;
+  display: block;
+  z-index: 1500;
 
-    &.navtop {
-      font-size: 2.72rem;
-      @media screen and(min-width: 370px) {
-        font-size: 2.9rem;
-      }
+  &.navtop {
+    height: 4.5rem;
 
-      @media screen and(min-width: 550px) {
-        font-size: 3rem;
-      }
-
-      @media screen and(min-width: 700px) {
-        font-size: 3.42rem;
-      }
-    }
-
-    &.navscroll {
-      @media screen and(min-width: 700px) {
-        font-size: 2.8rem;
-      }
+    @media screen and(min-width: 750px) {
+      height: 6rem;
     }
   }
+
+  &.navscroll {
+    height: 3.3rem;
+
+    @media screen and(min-width: 700px) {
+      height: 4rem;
+    }
+  }
+
+  // &__span {
+  //   // font-size: 2.2rem;
+  //   position: relative;
+  //   font-size: 2.42rem;
+  //   letter-spacing: 0.33rem;
+  //   color: $color-white;
+  //   text-transform: uppercase;
+  //   font-family: trumpgothicpro, sans-serif;
+  //   font-weight: 700;
+  //   font-style: normal;
+  //   z-index: 1500;
+
+  //   &.navtop {
+  //     font-size: 2.72rem;
+  //     @media screen and(min-width: 370px) {
+  //       font-size: 2.9rem;
+  //     }
+
+  //     @media screen and(min-width: 550px) {
+  //       font-size: 3rem;
+  //     }
+
+  //     @media screen and(min-width: 700px) {
+  //       font-size: 3.42rem;
+  //     }
+  //   }
+
+  //   &.navscroll {
+  //     @media screen and(min-width: 700px) {
+  //       font-size: 2.8rem;
+  //     }
+  //   }
+  // }
 }
