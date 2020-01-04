@@ -3,13 +3,16 @@ import { Link } from "gatsby";
 
 import "./Footer.scss";
 
+import Logo from "../Navbar/NavbarLogo/assets/wayfare-studios-logo_black-bg.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer__container">
         <div className="footer__row">
           <div className="footer__col">
-            <span className="footer__logo">Wayfare Studios</span>
+            {/* <span className="footer__logo">Wayfare Studios</span> */}
+            <Logo className="footer__logo" />
             <span className="footer__email">
               <a href="mailto:hello@wayfarestudios.com">
                 hello@wayfarestudios.com
