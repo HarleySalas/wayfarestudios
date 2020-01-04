@@ -58,10 +58,10 @@
 
   &--black {
     color: $color-white;
-    background-color: $color-black-light;
+    background-color: $color-black;
 
     &::after {
-      background-color: $color-black;
+      background-color: $color-black-light;
     }
   }
 
