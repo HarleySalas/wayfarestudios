@@ -38,6 +38,6 @@ module.exports = {
       },
     },
     //PWA (must be placed after gatsby-plugin-manifest)
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
   ],
 };
