@@ -19,6 +19,7 @@ const NavbarTop = () => {
               duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
+              data-text="Discover"
             >
               Discover
             </AniLink>
@@ -30,6 +31,7 @@ const NavbarTop = () => {
               duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
+              data-text="Services"
             >
               Services
             </AniLink>
@@ -41,6 +43,7 @@ const NavbarTop = () => {
               duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
+              data-text="Case Studies"
             >
               Case Studies
             </AniLink>
@@ -52,6 +55,7 @@ const NavbarTop = () => {
               duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
+              data-text="Contact"
             >
               Contact
             </AniLink>

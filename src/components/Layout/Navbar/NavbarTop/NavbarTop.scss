@@ -32,19 +32,19 @@
   &__li {
     color: $color-white;
     margin-right: 3rem;
-    transition: color 0.24s $ease;
 
     &:nth-of-type(4) {
       margin-right: 0;
-    }
-
-    &:hover {
-      color: $color-white-active;
     }
   }
 
   &__link {
     position: relative;
+    transition: all 0.24s $ease;
+
+    &:hover {
+      color: $color-primary;
+    }
 
     &.active {
       color: $color-white-active;
@@ -58,7 +58,7 @@
         height: 3px;
         background-color: $color-primary;
         transform-origin: 0% 50%;
-        animation: activeNav 0.42s $ease forwards;
+        animation: activeNav 0.72s $ease forwards;
       }
     }
   }
