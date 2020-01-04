@@ -60,12 +60,11 @@
     text-shadow: 0 0 7px rgba($color-black, 0.42);
     opacity: 0;
     animation: fadeUp 1s $ease forwards 0.72s;
-    color: $color-white;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.8rem;
-    color: $color-grey-light;
+    color: $color-primary;
 
     @media screen and(min-width: 750px) {
       font-size: 2rem;
