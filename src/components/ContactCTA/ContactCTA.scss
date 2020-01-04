@@ -63,7 +63,7 @@
       &__inner {
         display: block;
         color: $color-white;
-        text-shadow: 0 0 7px rgba($color-black, 0.42);
+        text-shadow: 0 0 4px rgba($color-black, 0.24);
         transform: translateY(100%);
         text-align: center;
 
@@ -75,13 +75,12 @@
   }
 
   &__span {
-    color: $color-white;
     margin-bottom: 5rem;
-    text-shadow: 0 0 7px rgba($color-black, 0.42);
+    text-shadow: 0 0 4px rgba($color-black, 0.24);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.8rem;
-    color: $color-white;
+    color: $color-white-dark;
     margin-bottom: 7rem;
     text-align: center;
     opacity: 0;
