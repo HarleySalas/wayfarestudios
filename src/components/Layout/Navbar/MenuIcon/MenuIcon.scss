@@ -15,7 +15,7 @@
 
   &:hover {
     .menu-icon__line {
-      background-color: $color-white-active;
+      background-color: $color-primary;
     }
   }
 
@@ -55,7 +55,7 @@
     height: 2px;
     background-color: $color-white;
     margin: 7px auto;
-    transition: all 0.24s $ease;
+    transition: all 0.42s $ease;
     border-radius: 3px;
   }
 }
