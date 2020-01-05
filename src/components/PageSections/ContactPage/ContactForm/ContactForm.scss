@@ -2,6 +2,7 @@
 
 .contact__form {
   width: 100%;
+  padding: 2rem;
 
   @media screen and(min-width: 1100px) {
     width: 70%;
@@ -57,18 +58,18 @@
   &__label {
     position: absolute;
     left: 0.8rem;
-    top: 0.4rem;
+    top: 0.7rem;
     transition: all 0.42s $ease;
     pointer-events: none;
-    color: $color-grey;
+    color: $color-black;
     font-weight: 500;
     font-family: trumpgothicpro, sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
 
     &.active {
-      transform: translateY(-4rem);
+      transform: translateY(-3rem);
       font-weight: 600;
     }
   }
@@ -76,9 +77,9 @@
   &__input {
     width: 100%;
     height: 3rem;
-    background-color: $color-white-dark;
+    background-color: $color-white;
     border: none;
-    border-bottom: 2px solid $color-grey;
+    border-bottom: 2px solid $color-primary;
     color: $color-grey;
     font-size: 2rem;
     padding: 2rem 1rem;
@@ -90,7 +91,13 @@
     }
 
     &:focus ~ .contact__form__label {
-      transform: translateY(-4rem);
+      transform: translateY(-3rem);
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      background-color: $color-white !important;
     }
   }
 
@@ -100,9 +107,9 @@
     padding: 2rem 1rem;
     width: 100%;
     resize: none;
-    background-color: $color-white-dark;
+    background-color: $color-white;
     border: none;
-    border-bottom: 2px solid $color-grey;
+    border-bottom: 2px solid $color-primary;
     color: $color-black;
     font-size: 2rem;
     font-weight: 300;
