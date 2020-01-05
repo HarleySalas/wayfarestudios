@@ -20,7 +20,7 @@
     display: block;
     text-transform: uppercase;
     font-weight: 600;
-    color: $color-grey-light;
+    color: $color-primary;
     opacity: 0;
 
     &.active {
@@ -113,6 +113,7 @@
     text-align: center;
     opacity: 0;
     text-transform: uppercase;
+    color: $color-grey;
 
     &.active {
       animation: fadeUp 0.72s $ease forwards 0.24s;
