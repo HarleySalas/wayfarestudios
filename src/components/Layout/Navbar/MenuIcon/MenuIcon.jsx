@@ -14,6 +14,7 @@ const MenuIcon = ({ navTop, navScroll }) => {
         className={`menu-icon ${navTop && "navtop"} ${navScroll &&
           "navscroll"} ${menuOpen && "active"}`}
         onClick={toggle}
+        aria-label="navigation menu"
       >
         <span className="menu-icon__line"></span>
         <span className="menu-icon__line"></span>

@@ -20,6 +20,7 @@ const Button = props => {
       onClick={props.onClick}
       ref={props.btnRef}
       data-text={props.btnText}
+      aria-label={props.btnText}
     >
       {/* {props.btnText} */}
     </button>
@@ -27,7 +28,7 @@ const Button = props => {
 
   if (props.linkTo) {
     return (
-      <AniLink to={props.linkTo} fadeduration={0.42}>
+      <AniLink to={props.linkTo} fadeduration={0.42} aria-label={props.btnText}>
         {btnElement}
       </AniLink>
     );
