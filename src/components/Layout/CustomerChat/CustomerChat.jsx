@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 
+import { useLocationPath } from "../../utils";
+
 //domain whitelisted, this isn't dangerous.
 const facebookAppId = "108033484048488";
 
 const CustomerChat = () => {
+  const path = useLocationPath();
+
   useEffect(() => {
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -20,7 +24,7 @@ const CustomerChat = () => {
       js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
-  }, []);
+  }, [path]);
 
   return (
     <>
