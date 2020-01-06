@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-155379175-1",
+        trackingId: `UA-155379175-1`,
       },
     }//PWA (must be placed after gatsby-plugin-manifest)
     `gatsby-plugin-remove-serviceworker`,
