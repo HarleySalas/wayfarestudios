@@ -37,7 +37,12 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    //PWA (must be placed after gatsby-plugin-manifest)
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-155379175-1",
+      },
+    }//PWA (must be placed after gatsby-plugin-manifest)
     `gatsby-plugin-remove-serviceworker`,
   ],
 };
