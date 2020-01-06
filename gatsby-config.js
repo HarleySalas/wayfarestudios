@@ -26,6 +26,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-155379175-1`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Wayfare Studios - Full Service Digitial Agency`,
@@ -37,12 +43,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-155379175-1`,
-      },
-    }//PWA (must be placed after gatsby-plugin-manifest)
+    //PWA (must be placed after gatsby-plugin-manifest)
     `gatsby-plugin-remove-serviceworker`,
   ],
 };
