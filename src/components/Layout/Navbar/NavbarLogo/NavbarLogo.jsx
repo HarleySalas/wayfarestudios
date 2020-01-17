@@ -2,7 +2,7 @@ import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "./NavbarLogo.scss";
 
-import Logo from "./assets/wayfare-studios-logo_black-bg.svg";
+import Logo from "./assets/logo-landscape.svg";
 
 const NavbarLogo = ({ navTop, navScroll }) => {
   return (
@@ -11,18 +11,6 @@ const NavbarLogo = ({ navTop, navScroll }) => {
         className={`navbar__logo ${navTop && "navtop"} ${navScroll &&
           "navscroll"}`}
       />
-      {/* <span
-        className={`navbar__logo__span ${navTop && "navtop"} ${navScroll &&
-          "navscroll"}`}
-      >
-        Wayfare{" "}
-      </span>
-      <span
-        className={`navbar__logo__span ${navTop && "navtop"} ${navScroll &&
-          "navscroll"}`}
-      >
-        Studios
-      </span> */}
     </AniLink>
   );
 };
