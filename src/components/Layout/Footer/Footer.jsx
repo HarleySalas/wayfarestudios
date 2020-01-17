@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import "./Footer.scss";
 
-import Logo from "../Navbar/NavbarLogo/assets/wayfare-studios-logo_black-bg.svg";
+import Logo from "./assets/logo-portrait.svg";
 
 const Footer = () => {
   return (
@@ -13,7 +13,10 @@ const Footer = () => {
           <div className="footer__col">
             {/* <span className="footer__logo">Wayfare Studios</span> */}
             <Logo className="footer__logo" />
-            <span className="footer__email">
+            <span className="footer__contact">
+              <a href="tel:7862042362">+1 (786) 204 - 2362</a>
+            </span>
+            <span className="footer__contact">
               <a href="mailto:hello@wayfarestudios.com">
                 hello@wayfarestudios.com
               </a>
@@ -69,7 +72,7 @@ const Footer = () => {
           </div>
           <div className="footer__col-bottom">
             <span className="footer__copyright">
-              &copy; 2019 Wayfare Studios, LLC.
+              &copy; 2019 - {new Date().getFullYear()} Wayfare Studios, LLC.
             </span>
           </div>
         </div>
