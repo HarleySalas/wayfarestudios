@@ -56,7 +56,7 @@ const HomeServices = () => {
           </HomeServicesCard>
           <HomeServicesCard
             heading="Social Media"
-            subheading="Management <span class='blue'>+</span><br/>Advertising"
+            subheading="Management <span class='blue'>+</span><br/>Marketing"
           >
             Building your audience and expanding your reach to new heights. Our
             strategic campaigns are focused on both short and long-term growth,

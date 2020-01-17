@@ -18,7 +18,7 @@ const services = () => {
         subtitle="Bespoke"
         titleOne="Web Design +"
         titleTwo="Development"
-        content="By focusing on your business needs first, we design with your success as our priority. By using no site builders, templates, or themes, we provide highly performant, beautiful and functional products with the latest technology.
+        content="By focusing on your business needs first, we design with your success as our priority. By using no site builders, templates, or themes, we provide highly performant, beautiful and functional products with ultra-modern technologies.
         "
         deliverables={[
           "Prototyping",
@@ -37,7 +37,7 @@ const services = () => {
         subtitle="Creative"
         titleOne="Branding +"
         titleTwo="Print Media"
-        content="Everything we do is towards the evolution and success of your brand. We’re ready to help you maintain the great presence you already have, or to create a new one from the ground up. A great brand always opens the door to more business opportunity."
+        content="Everything we do is towards the evolution and success of your brand. We’re ready to help you maintain the great presence you already have, or to create a new one from the ground up. A great brand always opens the door to more business opportunities."
         deliverables={[
           "Logos",
           "Brand/Style Guides",
