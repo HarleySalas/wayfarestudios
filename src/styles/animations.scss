@@ -39,3 +39,25 @@
     transform: scaleX(1);
   }
 }
+
+@keyframes horizontalIndicator {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-0.5rem);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(-0.5rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
