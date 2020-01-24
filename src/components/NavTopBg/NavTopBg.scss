@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.nav-top-bg {
+  height: 6.5rem;
+  width: 100vw;
+  background-color: $color-black;
+
+  @media screen and(min-width: 750px) {
+    height: 7rem;
+  }
+}
