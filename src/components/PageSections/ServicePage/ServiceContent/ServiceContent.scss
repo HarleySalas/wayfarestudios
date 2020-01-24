@@ -1,0 +1,35 @@
+@import "../../../../styles/variables.scss";
+
+.service-content {
+  position: relative;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  overflow: hidden;
+
+  &__emblem {
+    display: block;
+    position: absolute;
+    right: -30%;
+    fill: rgba($color-black, 0.04);
+    height: 100%;
+
+    @media screen and(min-width: 800px) {
+      right: 2rem;
+      fill: rgba($color-black, 0.06)
+    }
+  }
+
+  &__container {
+  }
+
+  &__left {
+  }
+
+  &__right {
+    padding: 7rem 0;
+    width: 100%;
+  }
+
+  &__content {
+  }
+}

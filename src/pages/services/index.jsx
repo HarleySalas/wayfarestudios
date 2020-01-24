@@ -1,12 +1,13 @@
 import React from "react";
 
-import Layout from "../components/Layout/Layout";
-import SEO from "../components/Layout/SEO/SEO";
+import Layout from "../../components/Layout/Layout";
+import SEO from "../../components/Layout/SEO/SEO";
 
-import ServicesHeader from "../components/PageSections/ServicesPage/ServicesHeader/ServicesHeader";
-import ServicesAbout from "../components/PageSections/ServicesPage/ServicesAbout/ServicesAbout";
-import ServicesCategory from "../components/PageSections/ServicesPage/ServicesCategory/ServicesCategory";
-import ContactCTA from "../components/ContactCTA/ContactCTA";
+import ServicesHeader from "../../components/PageSections/ServicesPage/ServicesHeader/ServicesHeader";
+import ServicesAbout from "../../components/PageSections/ServicesPage/ServicesAbout/ServicesAbout";
+// import ServicesCategory from "../components/PageSections/ServicesPage/ServicesCategory/ServicesCategory";
+import ServicesList from "../../components/PageSections/ServicesPage/ServicesList/ServicesList";
+import ContactCTA from "../../components/ContactCTA/ContactCTA";
 
 const services = () => {
   return (
@@ -14,7 +15,8 @@ const services = () => {
       <SEO title="Services" />
       <ServicesHeader />
       <ServicesAbout />
-      <ServicesCategory
+      <ServicesList />
+      {/* <ServicesCategory
         subtitle="Bespoke"
         titleOne="Web Design +"
         titleTwo="Development"
@@ -61,7 +63,7 @@ const services = () => {
           "Creative Marketing",
           "Analytics",
         ]}
-      />
+      /> */}
       <ContactCTA />
     </Layout>
   );

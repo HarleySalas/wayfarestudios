@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04rem;
 
   //COLORS
   &.blackBg {
@@ -49,6 +50,40 @@
 
       @media screen and(min-width: 1300px) {
         font-size: 2.9rem;
+      }
+    }
+  }
+
+  &.lg {
+    .three-point-title__subtitle {
+      font-size: 2.5rem;
+
+      @media screen and(min-width: 370px) {
+        font-size: 2.7rem;
+      }
+
+      @media screen and(min-width: 750px) {
+        font-size: 2.8rem;
+      }
+
+      @media screen and(min-width: 1300px) {
+        font-size: 3rem;
+      }
+    }
+
+    .three-point-title__title {
+      font-size: 3rem;
+
+      @media screen and(min-width: 370px) {
+        font-size: 3.3rem;
+      }
+
+      @media screen and(min-width: 750px) {
+        font-size: 3.7rem;
+      }
+
+      @media screen and(min-width: 1300px) {
+        font-size: 4rem;
       }
     }
   }

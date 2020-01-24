@@ -2,9 +2,12 @@ import React, { useRef } from "react";
 import "./HomeServices.scss";
 
 import Button from "../../../Button/Button";
-import HomeServicesCard from "./HomeServicesCard/HomeServicesCard";
+// import HomeServicesCard from "./HomeServicesCard/HomeServicesCard";
+import HomeServicesService from "./HomeServicesService/HomeServicesService";
 
 import { useObserver } from "../../../utils";
+
+import Emblem from "../../../../shared/Emblem-Fill-Stroke_fillable.svg";
 
 const HomeServices = () => {
   const headingRef = useRef(null);
@@ -14,8 +17,76 @@ const HomeServices = () => {
 
   return (
     <section className="home-services">
+      <Emblem className="home-services__emblem" />
       <div className="container home-services__container">
         <div className="home-services__heading-wrapper" ref={headingRef}>
+          <span
+            className={`home-services__heading-description ${headingAnimated &&
+              "active"}`}
+          >
+            What We Do
+          </span>
+          <h2 className="home-services__heading">
+            <span className="home-services__heading__span">
+              <span
+                className={`home-services__heading__span__inner ${headingAnimated &&
+                  "active"}`}
+              >
+                Services
+              </span>
+            </span>
+          </h2>
+          <span
+            className={`home-services__heading-line ${headingAnimated &&
+              "active"}`}
+          ></span>
+        </div>
+
+        <div className="home-services__services-wrapper">
+          <HomeServicesService
+            subtitle="Effective"
+            titleOne="Advertising"
+            titleTwo="Strategy"
+            content="Reach your audience."
+            linkTo="/services/advertising"
+          />
+          <HomeServicesService
+            subtitle="Creative"
+            titleOne="Branding"
+            titleTwo="Design"
+            content="Differentiate yourself."
+            linkTo="/services/branding"
+          />
+          <HomeServicesService
+            subtitle="Bespoke"
+            titleOne="Web Design"
+            titleTwo="Development"
+            content="Create the best solution."
+            linkTo="/services/web-development"
+          />
+          <HomeServicesService
+            subtitle="Social Media"
+            titleOne="Management"
+            titleTwo="Awareness"
+            content="Engage your audience."
+            linkTo="/services/social-media"
+          />
+          <HomeServicesService
+            subtitle="Search Engine"
+            titleOne="Optimization"
+            titleTwo="Marketing"
+            content="Drive new traffic."
+            linkTo="/services/seo"
+          />
+          <HomeServicesService
+            subtitle="Business"
+            titleOne="Analytics"
+            titleTwo="Research"
+            content="Measure results."
+            linkTo="/services/analytics"
+          />
+        </div>
+        {/* <div className="home-services__heading-wrapper" ref={headingRef}>
           <span
             className={`home-services__heading-description ${headingAnimated &&
               "active"}`}
@@ -62,7 +133,7 @@ const HomeServices = () => {
             strategic campaigns are focused on both short and long-term growth,
             that provide tangible results.
           </HomeServicesCard>
-        </div>
+        </div> */}
         <Button
           btnText="Learn More"
           btnStyle="black"

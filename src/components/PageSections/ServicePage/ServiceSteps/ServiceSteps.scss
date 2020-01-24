@@ -1,0 +1,63 @@
+@import "../../../../styles/variables.scss";
+
+.service-steps {
+  padding: 11rem 0;
+  &__step {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-last-of-type(1) {
+      .service-steps__step__line {
+        opacity: 0;
+      }
+    }
+
+    &__left {
+      width: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 1rem;
+      margin-right: 0rem;
+      // background-color: red;
+
+      @media screen and(min-width: 450px) {
+        margin-right: 1rem;
+      }
+    }
+
+    &__right {
+      // background-color: green;
+      width: calc(100% - 5rem);
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__dot {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: $color-primary;
+      transform: rotate(45deg) translateY(-0.6rem);
+    }
+
+    &__title {
+      font-size: 3.7rem;
+      margin-bottom: 1rem;
+
+      @media screen and(min-width: 1300px) {
+        font-size: 4rem;
+      }
+    }
+
+    &__line {
+      height: 100%;
+      width: 1px;
+      transform: translateX(0.9rem);
+      background-color: $color-grey;
+    }
+
+    &__content {
+      margin-bottom: 5rem;
+    }
+  }
+}
