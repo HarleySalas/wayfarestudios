@@ -3,6 +3,7 @@ module.exports = {
     title: `Wayfare Studios - Full Service Digital Agency`,
     description: `Web Design, Development, SEO and Digital Marketing Experts. Get a free proposal today!`,
     author: `Wayfare Studios`,
+    siteUrl: `https://wayfarestudios.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
