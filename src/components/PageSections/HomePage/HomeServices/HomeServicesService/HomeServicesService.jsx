@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 import "./HomeServicesService.scss";
 
 import { useObserver } from "../../../../utils";
@@ -18,10 +19,10 @@ const HomeServicesService = ({
   const ref = useRef(null);
   const animated = useObserver(ref);
   return (
-    <AniLink
-      fade
+    <Link
+      // fade
       to={linkTo}
-      duration={0.24}
+      // duration={0.24}
       className={`home-services__service ${animated && "active"}`}
     >
       <ThreePointTitle
@@ -35,7 +36,7 @@ const HomeServicesService = ({
         {content}
       </span>
       <Chevron className="home-services__service__chevron" />
-    </AniLink>
+    </Link>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from "gatsby";
 import "./NavbarTop.scss";
 
 import NavbarLogo from "../NavbarLogo/NavbarLogo";
@@ -13,52 +14,52 @@ const NavbarTop = () => {
         <MenuIcon navTop />
         <ul className="navbar__top__ul">
           <li className="navbar__top__li">
-            <AniLink
-              fade
+            <Link
+              // fade
               to="/discover"
-              duration={0.24}
+              // duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
               data-text="Discover"
             >
               Discover
-            </AniLink>
+            </Link>
           </li>
           <li className="navbar__top__li">
-            <AniLink
-              fade
+            <Link
+              // fade
               to="/services"
-              duration={0.24}
+              // duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
               data-text="Services"
             >
               Services
-            </AniLink>
+            </Link>
           </li>
           <li className="navbar__top__li">
-            <AniLink
-              fade
+            <Link
+              // fade
               to="/cases"
-              duration={0.24}
+              // duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
               data-text="Case Studies"
             >
               Case Studies
-            </AniLink>
+            </Link>
           </li>
           <li className="navbar__top__li">
-            <AniLink
-              fade
+            <Link
+              // fade
               to="/contact"
-              duration={0.24}
+              // duration={0.24}
               className="navbar__top__link"
               activeClassName="active"
               data-text="Contact"
             >
               Contact
-            </AniLink>
+            </Link>
           </li>
         </ul>
       </div>
