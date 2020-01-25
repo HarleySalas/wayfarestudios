@@ -1,11 +1,33 @@
 @import "../../../styles/variables.scss";
 
 .footer {
-  width: 100%;
-  // height: 30rem;
-  // padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
   background-color: $color-black;
   color: $color-white;
+
+  &__emblem {
+    position: absolute;
+    height: 100%;
+    transform: translateX(50%);
+    top: 0;
+    right: 50%;
+    fill: rgba($color-grey, 0.07);
+    z-index: 0;
+
+    @media screen and(min-width: 750px) {
+      transform: translateX(0);
+      height: 124%;
+      right: -25%;
+    }
+
+    @media screen and(min-width: 1100px) {
+      transform: translateX(0);
+      height: 142%;
+      right: 0;
+    }
+  }
 
   &__row {
     display: flex;
@@ -29,17 +51,18 @@
   &__col {
     width: 100%;
     margin-bottom: 5rem;
-
-    &:nth-last-of-type(1) {
-      margin-bottom: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
 
     &:nth-of-type(1) {
       @media screen and(min-width: 750px) {
-        width: 50%;
+        width: 100%;
+        margin-bottom: 7rem;
       }
 
-      @media screen and(min-width: 1200px) {
+      @media screen and(min-width: 1100px) {
         width: 33%;
         margin-bottom: 0;
       }
@@ -48,16 +71,21 @@
     &:nth-of-type(2) {
       @media screen and(min-width: 750px) {
         width: 50%;
-        margin-bottom: 0;
       }
 
-      @media screen and(min-width: 1200px) {
+      @media screen and(min-width: 1100px) {
         width: 33%;
       }
     }
 
     &:nth-of-type(3) {
-      @media screen and(min-width: 1200px) {
+      margin-bottom: 0rem;
+
+      @media screen and(min-width: 750px) {
+        width: 50%;
+      }
+
+      @media screen and(min-width: 1100px) {
         width: 33%;
       }
     }
@@ -65,6 +93,8 @@
 
   &__col-bottom {
     margin-bottom: 3rem;
+    text-align: center;
+    z-index: 1;
     &:nth-last-of-type(1) {
       margin-bottom: 0;
     }
@@ -100,14 +130,22 @@
     }
   }
 
+  &__ul-wrapper {
+    text-align: center;
+
+    @media screen and(min-width: 1100px) {
+      text-align: left;
+    }
+  }
+
   &__ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    display: inline-block;
   }
 
   &__li {
-    display: inline-block;
     color: $color-grey-light;
     transition: all 0.24s $ease;
     margin-bottom: 0.5rem;
@@ -140,10 +178,14 @@
     &:hover {
       color: $color-white !important;
     }
+
+    &.secondary {
+      opacity: 0.5;
+    }
   }
 
   &__copyright {
-    color: $color-grey-light;
+    color: rgba($color-grey-light, 0.5);
     font-weight: 300;
   }
 }
