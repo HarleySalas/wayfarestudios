@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 import "./MenuModal.scss";
 
+import Emblem from "../../../../shared/Emblem-Fill-Stroke_fillable.svg";
+
 const MenuModal = () => {
   const modalRef = useRef(null);
 
@@ -15,6 +17,7 @@ const MenuModal = () => {
   return (
     <div className="menu-modal__wrapper">
       <nav className="menu-modal" ref={modalRef}>
+        <Emblem className="menu-modal__emblem" />
         <ul className="menu-modal__ul">
           <li className="menu-modal__li">
             <Link

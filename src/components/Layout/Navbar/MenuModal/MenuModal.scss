@@ -12,6 +12,28 @@
   align-items: center;
   justify-content: center;
 
+  &__emblem {
+    position: absolute;
+    fill: rgba($color-grey, 0.07);
+    height: 100%;
+    top: 25%;
+    right: -50%;
+
+    @media screen and(min-width: 600px) {
+      right: -30%;
+    }
+
+    @media screen and(min-width: 1000px) {
+      right: -25%;
+    }
+
+    @media screen and(min-width: 1300px) {
+      height: 100%;
+      top: 15%;
+      right: -10%;
+    }
+  }
+
   &__wrapper {
     position: fixed;
     top: 0;
