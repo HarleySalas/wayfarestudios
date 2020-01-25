@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     // `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-react-svg`,
@@ -29,6 +30,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-155379175-1`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://wayfarestudios.com/`,
+        sitemap: `https://wayfarestudios.com/sitemap.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
     {
