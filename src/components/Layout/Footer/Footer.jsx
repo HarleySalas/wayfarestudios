@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="footer__col">
             <div className="footer__ul-wrapper">
-              <span className="footer__col-title">Links</span>
+              <span className="footer__col-title">Main</span>
               <ul className="footer__ul">
                 <li className="footer__li">
                   <Link to="/" className="footer__li__link">
