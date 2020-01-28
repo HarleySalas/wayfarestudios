@@ -6,7 +6,11 @@
   z-index: 1500;
 
   &.navtop {
-    height: 4.5rem;
+    height: 4rem;
+
+    @media screen and(min-width: 420px) {
+      height: 4.5rem;
+    }
 
     @media screen and(min-width: 750px) {
       height: 5rem;
