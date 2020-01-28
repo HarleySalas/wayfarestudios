@@ -2,13 +2,19 @@
 
 .page-header {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   min-height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  &__img-wrapper {
+    height: 50vh;
+    width: 100vw;
+    min-height: 50rem;
+  }
 
   &__background {
     position: absolute;
@@ -30,6 +36,7 @@
   }
 
   &__container {
+    position: absolute;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -64,7 +71,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 1.8rem;
-    color: $color-grey-light;
+    color: $color-white-dark;
 
     @media screen and(min-width: 750px) {
       font-size: 2rem;
