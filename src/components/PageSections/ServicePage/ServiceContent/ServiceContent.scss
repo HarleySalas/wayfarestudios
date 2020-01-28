@@ -10,16 +10,18 @@
     display: block;
     position: absolute;
     right: -30%;
-    fill: rgba($color-black, 0.04);
+    fill: $color-white-dark;
     height: 100%;
 
     @media screen and(min-width: 800px) {
       right: 2rem;
-      fill: rgba($color-black, 0.06)
+      fill: rgba($color-black, 0.06);
     }
   }
 
   &__container {
+    position: relative;
+    z-index: 1;
   }
 
   &__left {
