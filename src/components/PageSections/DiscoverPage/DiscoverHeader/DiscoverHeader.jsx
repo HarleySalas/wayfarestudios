@@ -1,13 +1,25 @@
 import React from "react";
-import HeaderImg from "./assets/discover-hero.jpg";
+import { useStaticQuery, graphql } from "gatsby";
 
 import PageHeader from "../../../PageHeader/PageHeader";
 
 const DiscoverHeader = () => {
+  const data = useStaticQuery(graphql`
+    query discoverHeroImg {
+      image: file(relativePath: { eq: "discover-hero.jpg" }) {
+        id
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
   return (
     <PageHeader
-      img={HeaderImg}
-      alt="Earth from outerspace"
+      img={data.image.childImageSharp.fluid}
+      alt="Downtown Miami Overhead"
       title="Discover"
       subtitle="The Solution For Your Brand"
     />
