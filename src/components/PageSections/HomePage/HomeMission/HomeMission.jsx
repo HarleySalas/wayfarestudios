@@ -42,14 +42,22 @@ const HomeMission = () => {
               ></div>
             </div>
             <p className={`home-mission__content ${animated && "active"}`}>
-              Wayfare Studios strives to create long-lasting client
+              Forged through passion of design, technology, and business,
+              <strong> Wayfare Studios</strong> is driven to make visions become
+              reality. By taking time to truly understand our client’s
+              objectives, utilizing the greatest technologies available, and
+              never settling for sub-par results, we redefine what “putting the
+              client first” means. Always striving to exceed your every
+              expectation, unparalleled service is our commitment to building
+              relationships that stand the test of time.
+              {/* Wayfare Studios strives to create long-lasting client
               relationships by providing unparalleled service. Working with
               businesses of all sizes, our results driven services are tailored
               specifically to your needs, while always involving you in the
               process. All of our work is bespoke, ensuring that you receive
               great attention to detail, and all of your requirements are met.
               Our mission is only a success when your growth exceeds
-              expectations.
+              expectations. */}
             </p>
             <div ref={ctaRef}>
               <Button
